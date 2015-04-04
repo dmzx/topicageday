@@ -34,5 +34,5 @@ $lang = array_merge($lang, array(
    	'TOPICAGEAGO'		   => 'ago',
 	'TOIPCAGEDAY'		   => 'day',
 	'TOPICAGEDAYS'		  => 'days',
-	'TOPICAGEDAYPOSTED'	 => 'This topic is posted',
+	'TOPICAGEDAYPOSTED'	 => 'This topic was posted',
 ));
