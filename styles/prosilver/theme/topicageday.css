@@ -1,0 +1,17 @@
+/**
+* @package Topic Age Day Extension
+* @copyright (c) 2015 dmzx - http://dmzx-web.net
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*/
+
+span.topicageday{
+    display: inline-block;
+    margin: 1px 1px 1px 0;
+    padding: 2px 5px;
+    background: #eef5f9;
+    color: #4C5D77;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+	font-size: 10px;
+}
