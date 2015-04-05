@@ -32,7 +32,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
    	'TOPICAGEAGO'		   => 'ago',
-	'TOIPCAGEDAY'		   => 'day',
+	'TOPICAGEDAY'		   => 'day',
 	'TOPICAGEDAYS'		  => 'days',
 	'TOPICAGEDAYPOSTED'	 => 'This topic was posted',
 ));
