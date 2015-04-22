@@ -30,7 +30,7 @@ class listener implements EventSubscriberInterface
 	public function viewforum_modify_topicrow($event)
 	{
 		$topic_row = $event['topic_row'];
-		$row  = $event['row'];
+		$row	= $event['row'];
 		$topic_row ['TOPIC_AGE_DAYS'] = round((time() - $row['topic_time']) / 86400);
 		$event['topic_row'] = $topic_row;
 
