@@ -7,42 +7,38 @@
 
 namespace dmzx\topicageday\event;
 
-/**
-* @ignore
-*/
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-/**
-* Event listener
-*/
 class listener implements EventSubscriberInterface
 {
+	/** @var \phpbb\user */
+	protected $user;
+	
+	/**
+	* Constructor
+	*
+	* @param \phpbb\user	$user
+	*/
+	public function __construct(\phpbb\user $user)
+	{
+		$this->user = $user;
+	}
 
 	static public function getSubscribedEvents()
 	{
-
 		return array(
-			'core.user_setup' => 'load_language_on_setup',
 			'core.viewforum_modify_topicrow' => 'viewforum_modify_topicrow',
 		);
 	}
 
 	public function viewforum_modify_topicrow($event)
-	{
+	{	
+		//Add language
+		$this->user->add_lang_ext('dmzx/topicageday', 'common');
+		
 		$topic_row = $event['topic_row'];
-		$row	= $event['row'];
-		$topic_row ['TOPIC_AGE_DAYS'] = round((time() - $row['topic_time']) / 86400);
+		$row  = $event['row'];
+		$topic_row ['TOPIC_AGE_DAYS'] = $this->user->lang('TOPICAGEDAYPOSTED', round((time() - $row['topic_time']) / 86400));
 		$event['topic_row'] = $topic_row;
-
-	}
-
-	public function load_language_on_setup($event)
-	{
-		$lang_set_ext = $event['lang_set_ext'];
-		$lang_set_ext[] = array(
-			'ext_name' => 'dmzx/topicageday',
-			'lang_set' => 'common',
-		);
-		$event['lang_set_ext'] = $lang_set_ext;
 	}
 }

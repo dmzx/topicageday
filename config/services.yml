@@ -1,5 +1,7 @@
 services:
     dmzx.topicageday.listener:
         class: dmzx\topicageday\event\listener
+        arguments:
+            - '@user'		
         tags:
             - { name: event.listener }
