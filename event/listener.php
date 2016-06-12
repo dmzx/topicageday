@@ -37,6 +37,7 @@ class listener implements EventSubscriberInterface
 		$this->user->add_lang_ext('dmzx/topicageday', 'common');
 
 		$topic_row = $event['topic_row'];
+		$row = $event['row'];
 		$topic_row ['TOPIC_AGE_DAYS'] = $this->user->lang('TOPICAGEDAYPOSTED', round((time() - $row['topic_time']) / 86400));
 		$event['topic_row'] = $topic_row;
 	}
