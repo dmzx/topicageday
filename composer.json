@@ -1,36 +1,36 @@
 {
-    "name": "dmzx/topicageday",
-    "type": "phpbb-extension",
-    "description": "Displays Topic age day to the viewforum.",
-    "homepage": "http://www.dmzx-web.net",
-    "version": "1.0.1",
-    "time": "2016-03-07",
-    "keywords": [
-        "phpbb",
-        "extension",
-        "topicageday"
-    ],
-    "license": "GPL-2.0",
-    "authors": [
-        {
-            "name": "dmzx",
-            "homepage": "http://www.dmzx-web.net",
-            "email": "info@dmzx-web.net",
-            "role": "Extension Developer"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.3"
-    },
-    "extra": {
-        "display-name": "Topic Age Day",
-        "soft-require": {
-            "phpbb/phpbb": ">=3.1.2,<3.2.0@dev"
-        },
+	"name": "dmzx/topicageday",
+	"type": "phpbb-extension",
+	"description": "Displays Topic age day to the viewforum.",
+	"homepage": "http://www.dmzx-web.net",
+	"version": "1.0.1",
+	"time": "2016-03-07",
+	"keywords": [
+		"phpbb",
+		"extension",
+		"topicageday"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "dmzx",
+			"homepage": "http://www.dmzx-web.net",
+			"email": "info@dmzx-web.net",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Topic Age Day",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.2,<3.2.0@dev"
+		},
 		"version-check": {
 			"host": "www.dmzx-web.net",
 			"directory": "/versions",
 			"filename": "topicageday_version.json"
 		}
-    }
+	}
 }

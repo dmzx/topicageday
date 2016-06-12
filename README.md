@@ -1,5 +1,7 @@
 # phpBB Topic Age Day Extension
 
+[![Build Status](https://travis-ci.org/dmzx/topicageday.svg?branch=master)](https://travis-ci.org/dmzx/topicageday)
+
 ## Install
 
 1. Download the latest release.
