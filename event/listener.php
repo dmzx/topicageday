@@ -38,7 +38,7 @@ class listener implements EventSubscriberInterface
 
 		$topic_row = $event['topic_row'];
 		$row = $event['row'];
-		$topic_row ['TOPIC_AGE_DAYS'] = $this->user->lang('TOPICAGEDAYPOSTED', round((time() - $row['topic_time']) / 86400));
+		$topic_row['TOPIC_AGE_DAYS'] = $this->user->lang('TOPICAGEDAYPOSTED', round((time() - $row['topic_time']) / 86400));
 		$event['topic_row'] = $topic_row;
 	}
 }
