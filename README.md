@@ -7,7 +7,7 @@
 1. Download the latest release.
 2. Unzip the downloaded release, and change the name of the folder to `topicageday`.
 3. In the `ext` directory of your phpBB board, create a new directory named `dmzx` (if it does not already exist).
-4. Copy the `topicageday` folder to `phpBB/ext/dmzx/` (if done correctly, you'll have the main extension class at (your forum root)/ext/dmzx/topicageday/composer.json).
+4. Copy the `topicageday` folder to `/ext/dmzx/` (if done correctly, you'll have the main extension class at (your forum root)/ext/dmzx/topicageday/composer.json).
 5. Navigate in the ACP to `Customise -> Manage extensions`.
 6. Look for `Topic Age Day` under the Disabled Extensions list, and click its `Enable` link.
 

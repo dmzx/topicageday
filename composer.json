@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "Displays Topic age day to the viewforum.",
 	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.1",
-	"time": "2016-03-07",
+	"version": "1.0.2",
+	"time": "2017-01-23",
 	"keywords": [
 		"phpbb",
 		"extension",
@@ -20,17 +20,18 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+		"php": ">=5.3.3",
+		"phpbb/phpbb": ">=3.1.2,<3.3"
 	},
 	"extra": {
 		"display-name": "Topic Age Day",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.2,<3.2.0@dev"
+			"phpbb/phpbb": ">=3.1.2,<3.3"
 		},
 		"version-check": {
-			"host": "www.dmzx-web.net",
-			"directory": "/versions",
-			"filename": "topicageday_version.json"
+			"host": "www.phpbb.com",
+			"directory": "/customise/db/extension/topic_age_day",
+			"filename": "version_check"
 		}
 	}
 }
